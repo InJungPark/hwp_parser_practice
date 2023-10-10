@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h2>한글파일</h2>
+    <button type="button" onclick="start();">버튼</button>
+</body>
+</html>
+<script>
+    const start = () => {
+
+        $.ajax({
+            url: "/start",
+            type : "POST",
+            success: function (resData) {
+                console.log(resData)
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+
+    }
+</script>
