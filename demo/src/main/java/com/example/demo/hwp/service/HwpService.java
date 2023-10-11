@@ -22,7 +22,7 @@ public class HwpService {
             hwpFile = HWPReader.fromFile(getStaticResourcePath());
             hwpText = TextExtractor.extract(hwpFile, TextExtractMethod.InsertControlTextBetweenParagraphText);
 
-            System.out.println("hwpText = " + hwpText);
+            log.info("hwpText = " + hwpText);
         } catch (Exception e) {
             log.error("hwp Exception ==> {}",e.getMessage());
         }
