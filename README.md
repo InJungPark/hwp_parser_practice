@@ -1,5 +1,4 @@
-# hwp_parser_practice
-## hwp parser 문서 읽어오기 Test
+# hwp parser 문서 읽어오기 Test
 
 한글 문서 파일 구조 5.0 됴큐먼트 : http://www.hancom.com/etc/hwpDownload.do 
 
